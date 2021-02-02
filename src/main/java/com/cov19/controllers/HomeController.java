@@ -34,7 +34,7 @@ import com.cov19.model.*;
 public class HomeController {
 
 	
-	@GetMapping("/")
+	@RequestMapping("/")
 	public String getHome() {
 		return "getCases";
 	}

@@ -171,15 +171,6 @@
 				<th>Critical</th>
 				<th>Cases Per One Million</th>
 				<th>Deaths Per One Million</th>
-<%-- 	 		<tr>
-				<td><%= gl.getNewConfirmed() %></td>
-				<td><%= gl.getTotalConfirmed()%></td>
-				<td><%= gl.getNewDeaths()%></td>
-				<td><%= gl.getTotalDeaths()%></td>
-				<td><%= gl.getNewRecovered()%></td>
-				<td><%= gl.getTotalRecovered()%></td>
-				--%>
-				
 			</tr> 
 			
 			<tr>
@@ -216,16 +207,6 @@
 				<th>Deaths Per One Million</th>
 				<th>Total Tests</th>
 				<th>Tests Per One Million</th>
-				
-<!-- 				<th>Country code    </th>
-				<th class = "bad">New Confirmed    </th>
-				<th>Total Confirmed    </th>
-				<th class = "bad">New Deaths    </th>
-				<th>Total Deaths    </th>
-				<th class = "good">New Recovered    </th>
-				<th class = "good">Total Recovered    </th> -->
-				
-			
 			</tr>
 			
 			<%for(int i = 1; i < obj.size(); i++){ %>
@@ -281,22 +262,6 @@
 					<td><%= myFormat.format(c.getTestsPerOneMillion())%></td>
 				</tr>
 			<%} %>
-			
-<%-- 			<%for(int i = 1; i < obj.size(); i++){ %>
-				<tr>
-					<td><a href = "getByCountry?sbc=<%=obj.get(i).getCountry().toUpperCase()%>"><%= obj.getCountries().get(i).getSlug().toUpperCase() %></a></td>
-	 				<td><%= obj.getCountries().get(i).getCountryCode()%></td>
-					<td class = "bad"><%= obj.getCountries().get(i).getNewConfirmed()%></td>
-					<td><%= obj.getCountries().get(i).getTotalConfirmed()%></td>
-					<td class = "bad"><%= obj.getCountries().get(i).getNewDeaths()%></td>
-					<td><%= obj.getCountries().get(i).getTotalDeaths()%></td>
-					<td class = "good"><%= obj.getCountries().get(i).getNewRecovered()%></td>
-					<td class = "good"><%= obj.getCountries().get(i).getTotalRecovered()%></td> 
-				</tr>
-				
-			
-			<%} %> --%>
-		
 		
 		</table>
 		
